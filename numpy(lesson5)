@@ -1,0 +1,5 @@
+import numpy as np
+import numpy.random as ran
+print(np.sum(range(100)))
+print(np.sum(range(int(input()))))
+print(np.mean(ran.sample(100)))
