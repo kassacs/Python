@@ -1,0 +1,15 @@
+Subj_list = ["хоббит", "Федор","Сумкин",'рост',120,"глаза","голубые","лоб", "открытый","вес", 40,"эльф","Арвен",'рост',188,"глаза","серо-голубые","лоб", "открытый","вес", 25,]
+Subj_dict = {("хоббит", "Федор","Сумкин"):{"рост": 120, "Лицо":{"Глаза": "голубые", "Лоб": "Открытый"}, "Вес":40}, ('эльф', "Арвен"):{"Рост": 188, "Лицо":{"глаза": "серо-голубые", "лоб": "Открытый"}, "вес":25}}
+print(Subj_dict["хоббит", "Федор","Сумкин"])
+print(Subj_list[13:])
+for subj,descr in Subj_dict.items():
+    if "Федор" in subj:
+        print(descr)
+for subj in Subj_list:
+    if subj== "Арвен":
+        print(Subj_list[Subj_list.index("Арвен"):])
+keys,znach=input().split()
+for sub,desc in Subj_dict.items():
+    for subj,descr in Subj_dict[sub].items():
+        if keys==subj and int(znach)==descr:
+            print(sub)
