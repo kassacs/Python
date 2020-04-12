@@ -1,0 +1,6 @@
+def Compare(S1,S2):
+    ngrams = [S1[i:i+3] for i in range(len(S1))]
+    n=0
+    for j in ngrams:
+        n += S2.count(j)
+    return (n/max(len(S1),len(S2)))
