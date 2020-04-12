@@ -1,0 +1,9 @@
+def Search_dic(subj,Subj_dict):
+    for subjects in Subj_dict.items():
+        if subj in subjects:
+            return descr
+
+def Search_list(subj,Subj_list):
+    for subjects in Subj_list:
+        if subj== subjects:
+            return Subj_list[Subj_list.index(subj):Subj_list.index(subj)+4]
