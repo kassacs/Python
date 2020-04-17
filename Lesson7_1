@@ -1,3 +1,6 @@
+
+''' Задание: Добавить вывод неподходящих запросов и отладку.
+   Примечание: Вместо имени, возраста, адреса использована раса, имя, рост, дополнительно введено четвертое поле:вес'''
 from pprint import pprint
 from itertools import product
 RASA_WORDS = {'раса','народность','гражданство'}
@@ -24,7 +27,7 @@ class Person:
 
     def __eq__(self, obj):
         if type(obj) == Person:
-            return (self.name, self.age, self.address) == (obj.name, obj.age, obj.address)
+            return (self.rasa, self.name, self.rost, self.ves) == (obj.rasa, obj.name, obj.rost, obj.ves)
         elif type(obj) == str:
             return self.__fuzzy_compare(obj)
         else:
