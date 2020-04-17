@@ -14,7 +14,6 @@ def answer(question):
            print (Compare(key,question))
            if Compare(key,question)>0.5: 
              return key, pars[key]
-             break
     pars.update([(question,choice(['yes', 'no']))])
     return question, pars[question]
     else:
