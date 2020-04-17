@@ -1,3 +1,4 @@
+# Задание: гадалка с памятью и слегка переформулированными вопросами
 from random import choice
 from pprint import pprint
 pars={}
